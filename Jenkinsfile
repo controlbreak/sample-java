@@ -15,8 +15,8 @@ pipeline {
                         -Dsonar.tests=src/test/java \
                         -Dsonar.java.binaries=target/classes \
                         -Dsonar.java.test.binaries=target/test-classes \
-                        -Dsonar.junit.reportPaths=target/surefire-reports \
-                        -Dsonar.jacoco.reportPaths=target/jacoco.exec"
+                        -Dsonar.testExecutionReportPaths=target/surefire-reports \
+                        -Dsonar.coverageReportPaths=target/*"
                 })
             }
             post {
